@@ -1,1 +1,52 @@
-[]
+[
+    {
+        "id": "e78fee6b9daffafb",
+        "type": "tab",
+        "label": "Flujo 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "9a1b2c3d.4e5f6g",
+        "type": "inject",
+        "z": "e78fee6b9daffafb",
+        "name": "Mensaje de prueba",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hola UPSE - Prueba Git",
+        "payloadType": "str",
+        "x": 370,
+        "y": 240,
+        "wires": [
+            [
+                "8h7g6f5e.4d3c2b"
+            ]
+        ]
+    },
+    {
+        "id": "8h7g6f5e.4d3c2b",
+        "type": "debug",
+        "z": "e78fee6b9daffafb",
+        "name": "Ver resultado",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 590,
+        "y": 240,
+        "wires": []
+    }
+]
